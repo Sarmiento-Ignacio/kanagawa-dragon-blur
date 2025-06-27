@@ -1,0 +1,21 @@
+local p = require("kanagawa_dragon_blur.palette")
+return {
+  DevIconLua        = { fg = p.blue },
+  DevIconJs         = { fg = p.yellow },
+  DevIconTs         = { fg = p.cyan },
+  DevIconJson       = { fg = p.orange },
+  DevIconHtml       = { fg = p.red },
+  DevIconCss        = { fg = p.blue },
+  DevIconScss       = { fg = p.magenta },
+  DevIconMd         = { fg = p.purple },
+  DevIconVim        = { fg = p.green },
+  DevIconGitignore  = { fg = p.red },
+  DevIconDockerfile = { fg = p.cyan },
+  DevIconSh         = { fg = p.green },
+  DevIconZsh        = { fg = p.green },
+  DevIconLock       = { fg = p.yellow },
+  DevIconToml       = { fg = p.orange },
+  DevIconYaml       = { fg = p.yellow },
+  DevIconFolder     = { fg = p.blue },
+  DevIconDefault    = { fg = p.fg },
+}

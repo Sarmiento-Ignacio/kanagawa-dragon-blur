@@ -12,6 +12,7 @@ local default_config = {
     booleans = {},
   },
   integrations = {
+    devicons = true,
     alpha = true,
     blink = true,
     cmp = true,
