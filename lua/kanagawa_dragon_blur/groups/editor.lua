@@ -2,9 +2,9 @@ local p = require("kanagawa_dragon_blur.palette")
 
 return {
   -- Fondo y texto principal
-  Normal = { fg = p.fg, bg = p.bg_dark },
-  NormalNC = { fg = p.fg, bg = p.bg_dark },
-  NormalFloat = { fg = p.fg, bg = p.gray0 },
+  Normal = { fg = p.fg, bg = "NONE" },
+  NormalNC = { fg = p.fg, bg = "NONE" },
+  NormalFloat = { fg = p.fg, bg = "NONE" },
 
   -- Elementos de UI
   ColorColumn = { bg = p.gray1 },
@@ -45,8 +45,8 @@ return {
   CursorLineNr = { fg = p.accent },
 
   -- Pmenu (menú de autocompletado)
-  Pmenu = { fg = p.fg, bg = "NONE" },
-  PmenuSel = { fg = p.white, bg = "NONE" },
+  Pmenu = { fg = p.fg, bg = p.black },
+  PmenuSel = { fg = p.white, bg = p.gray3 },
   PmenuSbar = { bg = p.gray2 },
   PmenuThumb = { bg = p.gray3 },
 
