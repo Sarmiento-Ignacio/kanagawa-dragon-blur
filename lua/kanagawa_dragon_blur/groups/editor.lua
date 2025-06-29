@@ -2,7 +2,7 @@ local p = require("kanagawa_dragon_blur.palette")
 
 return {
   -- Fondo y texto principal
-  Normal = { fg = p.fg, bg = "NONE" },
+  Normal = { fg = p.fg, bg = p.bg_dark },
   NormalNC = { fg = p.fg, bg = p.bg_dark },
   NormalFloat = { fg = p.fg, bg = p.gray0 },
 
