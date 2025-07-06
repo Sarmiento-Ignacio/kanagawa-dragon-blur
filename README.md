@@ -8,7 +8,7 @@ Un tema Neovim inspirado en Kanagawa Dragon, con un toque blur y soporte para in
 
 ```lua
 {
-  dir = "Sarmiento-Ignacio/kanagawa-dragon-blur", -- Cambia esto por la ruta real
+  "Sarmiento-Ignacio/kanagawa-dragon-blur", 
   name = "kanagawa-dragon-blur",
   priority = 1000,
 }
