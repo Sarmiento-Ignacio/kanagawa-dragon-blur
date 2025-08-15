@@ -61,18 +61,18 @@ return {
 	diffLine = { fg = p.function_ },
 	diffIndexLine = { fg = p.enum },
 
-	-- -- Grupos estándar para íconos y plugins (compatibilidad Kanagawa)
-	-- Special        = { fg = p.yellow },   -- Amarillo para JS, etc.
-	-- Function       = { fg = p.blue },     -- Azul para funciones/Lua/Vim
-	-- Type           = { fg = p.cyan },     -- Cyan para tipos/TS/Go
-	-- Tag            = { fg = p.red },      -- Rojo para HTML/Tag
-	-- Directory      = { fg = p.blue },     -- Azul para carpetas
-	-- Constant       = { fg = p.orange },   -- Naranja para JSON, TOML, YAML, Rust
-	-- PreProc        = { fg = p.magenta },  -- Magenta para SCSS, PHP
-	-- String         = { fg = p.green },    -- Verde para Markdown, SVG
-	-- Error          = { fg = p.red },      -- Rojo para errores
-	-- Boolean        = { fg = p.yellow },   -- Amarillo para booleanos, lock, svelte, astro
-	-- Structure      = { fg = p.bright_orange }, -- Naranja brillante para enums, struct, event
-	-- Identifier     = { fg = p.fg },       -- Default
-	-- Comment        = { fg = p.comment },  -- Gris para txt
+	-- Grupos estándar para íconos y plugins (compatibilidad Kanagawa)
+	Special = { fg = p.yellow }, -- Amarillo para JS, etc.
+	Function = { fg = p.blue }, -- Azul para funciones/Lua/Vim
+	Type = { fg = p.cyan }, -- Cyan para tipos/TS/Go
+	Tag = { fg = p.red }, -- Rojo para HTML/Tag
+	Directory = { fg = p.blue }, -- Azul para carpetas
+	Constant = { fg = p.orange }, -- Naranja para JSON, TOML, YAML, Rust
+	PreProc = { fg = p.magenta }, -- Magenta para SCSS, PHP
+	String = { fg = p.green }, -- Verde para Markdown, SVG
+	Error = { fg = p.red }, -- Rojo para errores
+	Boolean = { fg = p.yellow }, -- Amarillo para booleanos, lock, svelte, astro
+	Structure = { fg = p.bright_orange }, -- Naranja brillante para enums, struct, event
+	Identifier = { fg = p.fg }, -- Default
+	Comment = { fg = p.comment }, -- Gris para txt
 }
