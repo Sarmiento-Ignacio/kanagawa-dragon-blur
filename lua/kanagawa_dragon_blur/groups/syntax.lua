@@ -66,7 +66,7 @@ return {
 	Function = { fg = p.blue }, -- Azul para funciones/Lua/Vim
 	Type = { fg = p.cyan }, -- Cyan para tipos/TS/Go
 	Tag = { fg = p.red }, -- Rojo para HTML/Tag
-	Directory = { fg = p.blue }, -- Azul para carpetas
+	Directory = { fg = p.blue, bold = true }, -- Azul para carpetas
 	Constant = { fg = p.orange }, -- Naranja para JSON, TOML, YAML, Rust
 	PreProc = { fg = p.magenta }, -- Magenta para SCSS, PHP
 	String = { fg = p.green }, -- Verde para Markdown, SVG
