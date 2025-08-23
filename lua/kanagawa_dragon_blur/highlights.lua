@@ -15,6 +15,7 @@ function M.setup()
 	load_highlights(editor_highlights)
 	load_highlights(syntax_highlights)
 
+	-- Cargar integraciones habilitadas
 	for integration, enabled in pairs(config.integrations) do
 		if enabled then
 			local ok, highlights = pcall(require, "kanagawa_dragon_blur.groups.integrations." .. integration)
@@ -24,14 +25,10 @@ function M.setup()
 		end
 	end
 
-	-- Configurar devicons si está disponible
-	local ok, setup_devicons = pcall(require, "kanagawa_dragon_blur.setup_devicons")
-	if ok then
-		setup_devicons.setup()
-	end
-
+	-- Aplicar overrides personalizados
 	load_highlights(config.highlight_overrides)
 
+	-- Configurar colores de terminal si está habilitado
 	if config.terminal_colors then
 		terminal.setup()
 	end
