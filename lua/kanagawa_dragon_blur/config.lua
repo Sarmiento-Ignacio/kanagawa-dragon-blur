@@ -28,6 +28,7 @@ local default_config = {
 		neo_tree = true,
 		neogit = true,
 		neorg = true,
+		file_icons = true,
 		noice = true,
 		notify = true,
 		oil = true,
