@@ -31,7 +31,6 @@ local default_config = {
 		noice = true,
 		notify = true,
 		oil = true,
-		nvim_web_devicons = true, -- AGREGAR ESTA LÍNEA
 		rainbow_delimiters = true,
 		render_markdown = true,
 		snacks = true,

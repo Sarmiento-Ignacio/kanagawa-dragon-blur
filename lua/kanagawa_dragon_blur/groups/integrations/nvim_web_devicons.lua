@@ -1,10 +1,13 @@
-local p = requier("kanagawa_dragon_blur.palette")
+-- lua/kanagawa_dragon_blur/groups/integrations/nvim_web_devicons.lua
+-- (Nota: cambia el nombre del archivo de nvim_deb_devicons.lua a nvim_web_devicons.lua)
+
+local p = require("kanagawa_dragon_blur.palette")
 
 return {
-	-- Grupos de highlight para iconos
+	-- Grupos de highlight para iconos por categoría de color
 	DevIconDefault = { fg = p.gray4 },
 
-	-- Lenguajes de programación
+	-- Lenguajes de programación con colores específicos
 	DevIconLua = { fg = p.blue },
 	DevIconJs = { fg = p.yellow },
 	DevIconJavaScript = { fg = p.yellow },
@@ -19,6 +22,8 @@ return {
 	DevIconGo = { fg = p.cyan },
 	DevIconC = { fg = p.blue },
 	DevIconCpp = { fg = p.blue },
+	DevIconCs = { fg = p.purple }, -- Agregado C#
+	DevIconCSharp = { fg = p.purple },
 	DevIconJava = { fg = p.red },
 	DevIconPhp = { fg = p.purple },
 	DevIconRb = { fg = p.red },
@@ -26,7 +31,7 @@ return {
 	DevIconVim = { fg = p.green },
 	DevIconVimrc = { fg = p.green },
 
-	-- Web
+	-- Web technologies
 	DevIconHtml = { fg = p.red },
 	DevIconHtm = { fg = p.red },
 	DevIconCss = { fg = p.blue },
@@ -35,7 +40,7 @@ return {
 	DevIconLess = { fg = p.blue },
 	DevIconStyl = { fg = p.green },
 
-	-- Configuración
+	-- Configuration files
 	DevIconJson = { fg = p.yellow },
 	DevIconYaml = { fg = p.purple },
 	DevIconYml = { fg = p.purple },
@@ -45,7 +50,7 @@ return {
 	DevIconConf = { fg = p.gray4 },
 	DevIconConfig = { fg = p.gray4 },
 
-	-- Documentación
+	-- Documentation
 	DevIconMd = { fg = p.white },
 	DevIconMarkdown = { fg = p.white },
 	DevIconTxt = { fg = p.gray4 },
@@ -53,7 +58,7 @@ return {
 	DevIconDoc = { fg = p.blue },
 	DevIconDocx = { fg = p.blue },
 
-	-- Shell
+	-- Shell scripts
 	DevIconZsh = { fg = p.gray4 },
 	DevIconBash = { fg = p.gray4 },
 	DevIconSh = { fg = p.gray4 },
@@ -63,7 +68,7 @@ return {
 	DevIconDocker = { fg = p.blue },
 	DevIconDockerfile = { fg = p.blue },
 
-	-- Git
+	-- Git files
 	DevIconGitignore = { fg = p.orange },
 	DevIconGitattributes = { fg = p.orange },
 	DevIconGitmodules = { fg = p.orange },
@@ -84,14 +89,14 @@ return {
 	DevIconGruntfile = { fg = p.yellow },
 	DevIconWebpack = { fg = p.blue },
 
-	-- Datos
+	-- Data files
 	DevIconCsv = { fg = p.green },
 	DevIconTsv = { fg = p.green },
 	DevIconSql = { fg = p.blue },
 	DevIconDb = { fg = p.blue },
 	DevIconSqlite = { fg = p.blue },
 
-	-- Imágenes
+	-- Image files
 	DevIconPng = { fg = p.purple },
 	DevIconJpg = { fg = p.purple },
 	DevIconJpeg = { fg = p.purple },
@@ -100,14 +105,14 @@ return {
 	DevIconIco = { fg = p.purple },
 	DevIconWebp = { fg = p.purple },
 
-	-- Archivos comprimidos
+	-- Compressed files
 	DevIconZip = { fg = p.yellow },
 	DevIconRar = { fg = p.yellow },
 	DevIconTar = { fg = p.yellow },
 	DevIcon7z = { fg = p.yellow },
 	DevIconGz = { fg = p.yellow },
 
-	-- Otros
+	-- Special files
 	DevIconLicense = { fg = p.gray4 },
 	DevIconReadme = { fg = p.gray4 },
 	DevIconChangelog = { fg = p.gray4 },
