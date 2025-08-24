@@ -17,7 +17,7 @@ return {
 	-- Boolean = { fg = p.boolean } + styles.booleans,
 	Float = { fg = p.number },
 	-- Identifier = { fg = p.fg } + styles.identifiers,
-	-- Function = { fg = p.function_ } + styles.functions,
+	Function = { fg = p.function_ } + styles.functions,
 	Statement = { fg = p.primary },
 	Conditional = { fg = p.keyword },
 	Repeat = { fg = p.keyword },
@@ -63,7 +63,6 @@ return {
 
 	-- Grupos estándar para íconos y plugins (compatibilidad Kanagawa)
 	-- Special = { fg = p.yellow }, -- Amarillo para JS, etc.
-	-- Function = { fg = p.blue }, -- Azul para funciones/Lua/Vim
 	-- Type = { fg = p.cyan }, -- Cyan para tipos/TS/Go
 	Tag = { fg = p.red }, -- Rojo para HTML/Tag
 	-- Directory = { fg = p.blue, bold = true }, -- Azul para carpetas
@@ -80,7 +79,6 @@ return {
 	-- =============================================================================
 	Directory = { fg = p.blue, bold = true }, -- Carpetas
 	Special = { fg = p.yellow }, -- Archivos especiales (.js, .json, etc.)
-	Function = { fg = p.blue }, -- Funciones (lua, vim, etc.)
 	Type = { fg = p.cyan }, -- Tipos (go, ts, interfaces)
 	Constant = { fg = p.orange }, -- Constantes (rust, toml, config)
 	String = { fg = p.green }, -- Strings (markdown, text, shell)
