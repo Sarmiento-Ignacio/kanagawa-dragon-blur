@@ -36,7 +36,7 @@ local palettes = {
 		bright_cyan = "#7aa89f",
 		bright_white = "#dcd7ba",
 
-		selection = "#727169",
+		selection = "#7FB4CA",
 
 		comment = "#727169",
 		comment_doc = "#727169",
