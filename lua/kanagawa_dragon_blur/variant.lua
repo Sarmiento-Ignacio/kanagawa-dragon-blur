@@ -59,7 +59,7 @@ local palettes = {
 		punctuation = "#c5c9c5",
 		bracket = "#6e6c6a",
 		delimiter = "#6e6c6a",
-		string = "#c5c9c5",
+		string = "#98bb6c",
 		string_escape = "#7fb4ca",
 		string_regex = "#e6c384",
 		string_special = "#ffa066",
@@ -73,7 +73,7 @@ local palettes = {
 		variable = "#c5c9c5",
 		variable_member = "#c8c093",
 		variable_parameter = "#e6c384",
-		variable_special = "#ffa066",
+		variable_special = "#c5c9c5",
 		variant = "#ffa066",
 
 		none = "NONE",
