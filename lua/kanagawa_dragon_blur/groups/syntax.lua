@@ -9,39 +9,43 @@ local styles = vim.tbl_map(function(value)
 end, config.styles)
 
 return {
-	-- Comment = { fg = p.comment, italic = true } + styles.comments,
-	-- Constant = { fg = p.constant },
-	-- String = { fg = p.string },
+	-- =============================================================================
+	-- GRUPOS BÁSICOS DE NEOVIM (usados por TODOS los file managers)
+	-- =============================================================================
+	Directory = { fg = p.blue, bold = true }, -- Carpetas
+	Special = { fg = p.yellow }, -- Archivos especiales (.js, .json, etc.)
+	Type = { fg = p.cyan }, -- Tipos (go, ts, interfaces)
+	Constant = { fg = p.orange }, -- Constantes (rust, toml, config)
+	String = { fg = p.green }, -- Strings (markdown, text, shell)
+	Keyword = { fg = p.purple } + styles.keywords, -- Keywords (c#, php, keywords)
+	Error = { fg = p.red }, -- Errores (java, html)
+	Comment = { fg = p.gray4 } + styles.comments, -- Comentarios (txt, logs)
+	PreProc = { fg = p.magenta }, -- Preprocessor (scss, sass)
+	Identifier = { fg = p.white } + styles.identifiers, -- Identificadores (default)
 	Character = { fg = p.string },
 	Number = { fg = p.number },
-	-- Boolean = { fg = p.boolean } + styles.booleans,
 	Float = { fg = p.number },
-	-- Identifier = { fg = p.fg } + styles.identifiers,
 	Function = { fg = p.function_ } + styles.functions,
 	Statement = { fg = p.primary },
 	Conditional = { fg = p.keyword },
 	Repeat = { fg = p.keyword },
 	Label = { fg = p.tag },
 	Operator = { fg = p.operator },
-	-- Keyword = { fg = p.keyword } + styles.keywords,
 	Exception = { fg = p.keyword },
-	-- PreProc = { fg = p.purple },
 	Include = { fg = p.purple },
 	Define = { fg = p.purple },
 	Macro = { fg = p.purple },
 	PreCondit = { fg = p.purple },
-	-- Type = { fg = p.type },
 	StorageClass = { fg = p.type },
-	-- Structure = { fg = p.enum },
 	Typedef = { fg = p.type },
-	-- Special = { fg = p.tag },
 	SpecialChar = { fg = p.string_special },
-	-- Tag = { fg = p.tag },
 	SpecialComment = { fg = p.comment_doc },
 	Debug = { fg = p.hint },
 	Underlined = { underline = true },
-	-- Error = { fg = p.red },
 	Todo = { fg = p.variant },
+	Tag = { fg = p.red }, -- Rojo para HTML/Tag
+	Boolean = { fg = p.yellow } + styles.booleans, -- Amarillo para booleanos, lock, svelte, astro
+	Structure = { fg = p.bright_orange }, -- Naranja brillante para enums, struct, event
 
 	-- HTML
 	htmlArg = { fg = p.primary, italic = true },
@@ -60,33 +64,6 @@ return {
 	diffFile = { fg = p.comment_doc },
 	diffLine = { fg = p.function_ },
 	diffIndexLine = { fg = p.enum },
-
-	-- Grupos estándar para íconos y plugins (compatibilidad Kanagawa)
-	-- Special = { fg = p.yellow }, -- Amarillo para JS, etc.
-	-- Type = { fg = p.cyan }, -- Cyan para tipos/TS/Go
-	Tag = { fg = p.red }, -- Rojo para HTML/Tag
-	-- Directory = { fg = p.blue, bold = true }, -- Azul para carpetas
-	-- Constant = { fg = p.orange }, -- Naranja para JSON, TOML, YAML, Rust
-	-- PreProc = { fg = p.magenta }, -- Magenta para SCSS, PHP
-	-- String = { fg = p.green }, -- Verde para Markdown, SVG
-	-- Error = { fg = p.red }, -- Rojo para errores
-	Boolean = { fg = p.yellow }, -- Amarillo para booleanos, lock, svelte, astro
-	Structure = { fg = p.bright_orange }, -- Naranja brillante para enums, struct, event
-	-- Identifier = { fg = p.fg }, -- Default
-	-- Comment = { fg = p.comment }, -- Gris para txt
-	-- =============================================================================
-	-- GRUPOS BÁSICOS DE NEOVIM (usados por TODOS los file managers)
-	-- =============================================================================
-	Directory = { fg = p.blue, bold = true }, -- Carpetas
-	Special = { fg = p.yellow }, -- Archivos especiales (.js, .json, etc.)
-	Type = { fg = p.cyan }, -- Tipos (go, ts, interfaces)
-	Constant = { fg = p.orange }, -- Constantes (rust, toml, config)
-	String = { fg = p.green }, -- Strings (markdown, text, shell)
-	Keyword = { fg = p.purple }, -- Keywords (c#, php, keywords)
-	Error = { fg = p.red }, -- Errores (java, html)
-	Comment = { fg = p.gray4 }, -- Comentarios (txt, logs)
-	PreProc = { fg = p.magenta }, -- Preprocessor (scss, sass)
-	Identifier = { fg = p.white }, -- Identificadores (default)
 
 	-- =============================================================================
 	-- NETRW (File manager nativo de Neovim)
