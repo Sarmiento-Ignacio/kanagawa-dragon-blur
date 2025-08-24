@@ -29,7 +29,7 @@ return {
 	["@tag.delimiter"] = { fg = p.delimiter },
 	["@type.builtin"] = { fg = p.type },
 	["@variable"] = { fg = p.variable } + styles.variables,
-	["@variable.builtin"] = { fg = p.purple } + styles.variables,
+	["@variable.builtin"] = { fg = p.variable_special } + styles.variables,
 	["@variable.parameter"] = { fg = p.variable_parameter } + styles.variables,
 	["@constructor.javascript"] = { fg = p.constructor },
 	["@keyword.clojure"] = { fg = p.keyword } + styles.keywords,
