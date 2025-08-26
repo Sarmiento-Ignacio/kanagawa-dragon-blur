@@ -36,7 +36,7 @@ local palettes = {
 		bright_cyan = "#7aa89f",
 		bright_white = "#dcd7ba",
 
-		selection = "#7FB4CA",
+		selection = "#727169",
 
 		comment = "#727169",
 		comment_doc = "#727169",
@@ -70,10 +70,10 @@ local palettes = {
 		type = "#7aa89f",
 		type_interface = "#8ba4b0",
 		type_super = "#938aa9",
-		variable = "#c5c9c5",
+		variable = "#ff5d62",
 		variable_member = "#c8c093",
 		variable_parameter = "#e6c384",
-		variable_special = "#c5c9c5",
+		variable_special = "#ffa066",
 		variant = "#ffa066",
 
 		none = "NONE",
