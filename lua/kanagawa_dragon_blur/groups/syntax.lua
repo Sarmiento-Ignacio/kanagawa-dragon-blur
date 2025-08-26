@@ -40,7 +40,7 @@ return {
 	SpecialComment = { fg = p.comment_doc }, -- special things inside a comment
 	Debug = { fg = p.hint }, -- debugging statements
 	Underlined = { underline = true }, -- text that stands out
-	Error = { fg = p.keyword }, -- any erroneous construct
+	Error = { fg = p.variable }, -- any erroneous construct
 	Todo = { fg = p.variant }, -- TODO, FIXME, etc.
 	-- HTML
 	htmlArg = { fg = p.primary, italic = true }, -- attributes
