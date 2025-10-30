@@ -4,8 +4,8 @@ local palettes = {
 		gray0 = "#0d0c0c",
 		gray1 = "#282727",
 		gray2 = "#393836",
-		gray3 = "#6e6c6a",
-		gray4 = "#727169",
+		gray3 = "#FFFEF7",
+		gray4 = "#FFFEF7",
 		gray5 = "#c8c093",
 
 		fg = "#c5c9c5",
@@ -36,7 +36,7 @@ local palettes = {
 		bright_cyan = "#7aa89f",
 		bright_white = "#dcd7ba",
 
-		selection = "#727169",
+		selection = "#FFFEF7",
 
 		comment = "#727169",
 		comment_doc = "#727169",
