@@ -68,10 +68,10 @@ return {
 	SpellRare = { fg = p.accent },
 
 	-- Barra de estado y pestañas
-	StatusLine = { fg = p.fg, bg = p.bg_dark },
-	StatusLineNC = { fg = p.fg_muted, bg = p.bg_dark },
-	StatusLineTerm = { fg = p.fg, bg = p.gray1 },
-	StatusLineTermNC = { fg = p.fg_muted, bg = p.bg_dark },
+	StatusLine = { fg = p.fg, bg = "NONE" },
+	StatusLineNC = { fg = p.fg_muted, bg = "NONE" },
+	StatusLineTerm = { fg = p.fg, bg = "NONE" },
+	StatusLineTermNC = { fg = p.fg_muted, bg = "NONE" },
 	TabLine = { fg = "NONE" },
 	TabLineFill = { bg = "NONE" },
 	TabLineSel = { fg = "NONE" },
