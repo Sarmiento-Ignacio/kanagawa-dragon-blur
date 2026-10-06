@@ -37,14 +37,14 @@ return {
 	["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
 	["@lsp.typemod.variable.injected"] = { link = "@variable" },
 	-- Diagnostics
-	DiagnosticOk = { fg = p.enum },
-	DiagnosticError = { fg = p.variable },
-	DiagnosticWarn = { fg = p.string },
-	DiagnosticInfo = { fg = p.function_ },
+	DiagnosticOk = { fg = p.green },
+	DiagnosticError = { fg = p.red },
+	DiagnosticWarn = { fg = p.yellow },
+	DiagnosticInfo = { fg = p.blue },
 	DiagnosticHint = { fg = p.cyan },
-	DiagnosticUnderlineError = { fg = p.variable, underline = true },
-	DiagnosticUnderlineWarn = { fg = p.string, underline = true },
-	DiagnosticUnderlineInfo = { fg = p.function_, underline = true },
+	DiagnosticUnderlineError = { fg = p.red, underline = true },
+	DiagnosticUnderlineWarn = { fg = p.yellow, underline = true },
+	DiagnosticUnderlineInfo = { fg = p.blue, underline = true },
 	DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
 
 	-- Neovim's built-in language server client

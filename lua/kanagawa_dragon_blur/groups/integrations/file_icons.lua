@@ -1,34 +1,15 @@
--- Reemplaza el contenido de tu archivo: lua/kanagawa_dragon_blur/groups/integrations/file_icons.lua
--- O crea este archivo si no existe
-
 local p = require("kanagawa_dragon_blur.palette")
 
--- CONFIGURACIÓN UNIVERSAL QUE FUNCIONA CON CUALQUIER FILE MANAGER
 return {
-	-- =============================================================================
-	-- GRUPOS BÁSICOS DE NEOVIM (usados por TODOS los file managers)
-	-- =============================================================================
-	Directory = { fg = p.blue, bold = true }, -- Carpetas
-	Special = { fg = p.yellow }, -- Archivos especiales (.js, .json, etc.)
-	Function = { fg = p.blue }, -- Funciones (lua, vim, etc.)
-	Type = { fg = p.cyan }, -- Tipos (go, ts, interfaces)
-	Constant = { fg = p.orange }, -- Constantes (rust, toml, config)
-	String = { fg = p.green }, -- Strings (markdown, text, shell)
-	Keyword = { fg = p.purple }, -- Keywords (c#, php, keywords)
-	Error = { fg = p.red }, -- Errores (java, html)
-	Comment = { fg = p.gray4 }, -- Comentarios (txt, logs)
-	PreProc = { fg = p.magenta }, -- Preprocessor (scss, sass)
-	Identifier = { fg = p.white }, -- Identificadores (default)
-
 	-- =============================================================================
 	-- NETRW (File manager nativo de Neovim)
 	-- =============================================================================
-	netrwDir = { fg = p.blue, bold = true },
+	netrwDir = { fg = p.blue },
 	netrwPlain = { fg = p.white },
-	netrwExe = { fg = p.green, bold = true },
+	netrwExe = { fg = p.green },
 	netrwSpecial = { fg = p.yellow },
 	netrwSymLink = { fg = p.cyan },
-	netrwTreeBar = { fg = p.gray4 },
+	netrwTreeBar = { fg = p.ui_secondary },
 
 	-- =============================================================================
 	-- TELESCOPE (si lo usas como file picker)
@@ -43,20 +24,12 @@ return {
 	-- =============================================================================
 	-- OIL.NVIM (file manager minimalista)
 	-- =============================================================================
-	OilDir = { fg = p.blue, bold = true },
+	OilDir = { fg = p.blue },
 	OilFile = { fg = p.white },
 	OilCreate = { fg = p.green },
 	OilDelete = { fg = p.red },
 	OilMove = { fg = p.yellow },
 	OilChange = { fg = p.orange },
-
-	-- =============================================================================
-	-- MINI.FILES (del ecosistema mini.nvim)
-	-- =============================================================================
-	MiniFilesDirectory = { fg = p.blue, bold = true },
-	MiniFilesFile = { fg = p.white },
-	MiniFilesBorder = { fg = p.gray4 },
-	MiniFilesTitle = { fg = p.yellow, bold = true },
 
 	-- =============================================================================
 	-- FZF-LUA (si lo usas)
@@ -68,20 +41,6 @@ return {
 	-- RANGER / LF / NNN (terminal file managers)
 	-- =============================================================================
 	-- Estos usan los colores de terminal, que ya están configurados en terminal.lua
-
-	-- =============================================================================
-	-- CONFIGURACIÓN POR TREESITTER (detecta tipos de archivo automáticamente)
-	-- =============================================================================
-	["@text.uri"] = { fg = p.cyan, underline = true }, -- Links
-	["@text.reference"] = { fg = p.blue }, -- Referencias
-	["@text.title.1"] = { fg = p.red, bold = true }, -- Títulos H1
-	["@text.title.2"] = { fg = p.orange, bold = true }, -- Títulos H2
-	["@text.title.3"] = { fg = p.yellow, bold = true }, -- Títulos H3
-	["@text.emphasis"] = { fg = p.green, italic = true }, -- Énfasis
-	["@text.strong"] = { fg = p.blue, bold = true }, -- Texto fuerte
-	["@markup.heading"] = { fg = p.yellow, bold = true }, -- Headings markdown
-	["@markup.link.url"] = { fg = p.cyan, underline = true }, -- URLs
-	["@markup.raw"] = { fg = p.green }, -- Código raw
 
 	-- =============================================================================
 	-- HIGHLIGHT GROUPS GENÉRICOS PARA EXTENSIONES (algunos plugins los usan)
@@ -112,10 +71,10 @@ return {
 	FileXml = { fg = p.green },
 	FileMd = { fg = p.white },
 	FileMarkdown = { fg = p.white },
-	FileTxt = { fg = p.gray4 },
-	FileSh = { fg = p.gray4 },
-	FileBash = { fg = p.gray4 },
-	FileZsh = { fg = p.gray4 },
+	FileTxt = { fg = p.fg_muted },
+	FileSh = { fg = p.fg_muted },
+	FileBash = { fg = p.fg_muted },
+	FileZsh = { fg = p.fg_muted },
 	FileFish = { fg = p.green },
 	FilePng = { fg = p.purple },
 	FileJpg = { fg = p.purple },

@@ -11,17 +11,6 @@ return {
 	MiniFilesTitle = { fg = p.variable },
 	MiniFilesTitleFocused = { fg = p.fg, bold = true },
 
-	-- Mini Icons - ESTO ES LO QUE FALTA
-	MiniIconsAzure = { fg = p.blue },
-	MiniIconsBlue = { fg = p.blue },
-	MiniIconsCyan = { fg = p.cyan },
-	MiniIconsGreen = { fg = p.green },
-	MiniIconsGrey = { fg = p.fg },
-	MiniIconsOrange = { fg = p.orange },
-	MiniIconsPurple = { fg = p.purple },
-	MiniIconsRed = { fg = p.red },
-	MiniIconsYellow = { fg = p.yellow },
-
 	-- Mini Clue
 	MiniClueBorder = { link = "FloatBorder" },
 	MiniClueDescGroup = { link = "DiagnosticFloatingWarn" },
@@ -109,7 +98,7 @@ return {
 
 	-- Mini Starter
 	MiniStarterCurrent = { nocombine = true },
-	MiniStarterFooter = { fg = p.gray4 },
+	MiniStarterFooter = { fg = p.ui_secondary },
 	MiniStarterHeader = { link = "Title" },
 	MiniStarterInactive = { link = "Comment" },
 	MiniStarterItem = { link = "Normal" },
@@ -119,29 +108,29 @@ return {
 	MiniStarterQuery = { fg = p.blue },
 
 	-- Mini Statusline
-	MiniStatuslineDevinfo = { fg = p.fg_muted },
-	MiniStatuslineFileinfo = { fg = p.fg_muted },
-	MiniStatuslineFilename = { fg = p.fg_muted },
+	MiniStatuslineDevinfo = { fg = p.ui_secondary, bg = "NONE" },
+	MiniStatuslineFileinfo = { fg = p.ui_secondary, bg = "NONE" },
+	MiniStatuslineFilename = { fg = p.ui_secondary, bg = "NONE" },
 	MiniStatuslineInactive = { link = "StatusLineNC" },
-	MiniStatuslineModeCommand = { fg = p.black, bg = p.operator, bold = true },
-	MiniStatuslineModeInsert = { fg = p.black, bg = p.green, bold = true },
-	MiniStatuslineModeNormal = { fg = p.black, bg = p.blue, bold = true },
-	MiniStatuslineModeOther = { fg = p.black, bg = p.cyan, bold = true },
-	MiniStatuslineModeReplace = { fg = p.black, bg = p.orange, bold = true },
-	MiniStatuslineModeVisual = { fg = p.black, bg = p.purple, bold = true },
+	MiniStatuslineModeCommand = { fg = p.operator, bg = "NONE", bold = true },
+	MiniStatuslineModeInsert = { fg = p.green, bg = "NONE", bold = true },
+	MiniStatuslineModeNormal = { fg = p.ui_secondary, bg = "NONE" },
+	MiniStatuslineModeOther = { fg = p.cyan, bg = "NONE", bold = true },
+	MiniStatuslineModeReplace = { fg = p.orange, bg = "NONE", bold = true },
+	MiniStatuslineModeVisual = { fg = p.purple, bg = "NONE", bold = true },
 
 	-- Mini Surround
 	MiniSurround = { link = "IncSearch" },
 
 	-- Mini Tabline
-	MiniTablineCurrent = { fg = p.fg_muted, bold = true },
+	MiniTablineCurrent = { fg = p.fg, bg = "NONE", bold = true },
 	MiniTablineFill = { link = "TabLineFill" },
-	MiniTablineHidden = { fg = p.gray4 },
-	MiniTablineModifiedCurrent = { fg = p.fg_muted, bold = true },
-	MiniTablineModifiedHidden = { fg = p.gray4 },
-	MiniTablineModifiedVisible = { fg = p.gray4, bold = true },
-	MiniTablineTabpagesection = { fg = p.fg, bold = true },
-	MiniTablineVisible = { fg = p.gray4, bold = true },
+	MiniTablineHidden = { fg = p.fg_muted, bg = "NONE" },
+	MiniTablineModifiedCurrent = { fg = p.fg, bg = "NONE", bold = true },
+	MiniTablineModifiedHidden = { fg = p.fg_muted, bg = "NONE" },
+	MiniTablineModifiedVisible = { fg = p.ui_secondary, bg = "NONE" },
+	MiniTablineTabpagesection = { fg = p.fg, bg = "NONE", bold = true },
+	MiniTablineVisible = { fg = p.ui_secondary, bg = "NONE" },
 
 	-- Mini Test
 	MiniTestEmphasis = { bold = true },

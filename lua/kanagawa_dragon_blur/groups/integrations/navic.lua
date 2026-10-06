@@ -29,6 +29,6 @@ return {
     NavicIconsEvent         = { link = "Structure" },
     NavicIconsOperator      = { link = "Operator" },
     NavicIconsTypeParameter = { link = "Type" },
-    NavicText               = { fg = p.fg, bg = p.none },
-    NavicSeparator          = { fg = p.gray4, bg = p.none },
+    NavicText               = { fg = p.fg, bg = "NONE" },
+    NavicSeparator          = { fg = p.ui_secondary, bg = "NONE" },
 }

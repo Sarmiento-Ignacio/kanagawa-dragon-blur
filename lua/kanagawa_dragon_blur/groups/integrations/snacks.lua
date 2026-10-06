@@ -1,12 +1,12 @@
 local p = require("kanagawa_dragon_blur.palette")
 
 return {
-  SnacksIndent = { fg = p.gray3 },
-  SnacksIndentScope = { fg = p.subtext4 },
+  SnacksIndent = { fg = p.border },
+  SnacksIndentScope = { fg = p.ui_secondary },
   SnacksDashboardHeader = { fg = p.purple },
-  SnacksDashboardDesc = { fg = p.subtext1 },
-  SnacksDashboardKey = { fg = p.magenta, bold = true },
-  SnacksDashboardIcon = { fg = p.subtext1 },
+  SnacksDashboardDesc = { fg = p.ui_secondary },
+  SnacksDashboardKey = { fg = p.magenta },
+  SnacksDashboardIcon = { fg = p.ui_secondary },
   SnacksDashboardFooter = { fg = p.purple, italic = true },
-  SnacksDashboardSpecial = { fg = p.bright_purple, bold = true, italic = true },
+  SnacksDashboardSpecial = { fg = p.bright_purple, italic = true },
 }

@@ -10,10 +10,10 @@ return {
 	ColorColumn = { bg = p.gray1 },
 	CursorLine = { bg = p.gray1 },
 	Conceal = { fg = p.gray1 },
-	SignColumn = { bg = p.bg_dark, fg = p.fg_muted },
-	FoldColumn = { bg = p.bg_dark, fg = p.fg_muted },
-	VertSplit = { fg = p.gray2 },
-	WinSeparator = { fg = p.gray2 },
+	SignColumn = { bg = "NONE", fg = p.fg_muted },
+	FoldColumn = { bg = "NONE", fg = p.fg_muted },
+	VertSplit = { fg = p.border },
+	WinSeparator = { fg = p.border },
 	EndOfBuffer = { fg = p.bg_dark },
 
 	-- Cursor y selección
@@ -28,27 +28,27 @@ return {
 	Title = { fg = p.title },
 
 	-- Diffs y Git
-	DiffAdd = { bg = p.green, fg = p.black },
+	DiffAdd = { bg = p.surface, fg = p.green },
 	DiffChange = { fg = p.yellow, underline = true },
-	DiffDelete = { bg = p.orange, fg = p.black },
-	DiffText = { bg = p.yellow, fg = p.black },
+	DiffDelete = { bg = p.surface, fg = p.red },
+	DiffText = { bg = p.selection, fg = p.yellow },
 
 	-- Mensajes
 	ErrorMsg = { fg = p.red },
 	WarningMsg = { fg = p.yellow },
-	ModeMsg = { fg = p.gray3, bold = true },
-	MoreMsg = { fg = p.bright_magenta },
+	ModeMsg = { fg = p.ui_secondary, bold = true },
+	MoreMsg = { fg = p.purple },
 	Question = { fg = p.purple },
 
 	-- Número de línea
-	LineNr = { fg = p.gray5 },
+	LineNr = { fg = p.fg_muted },
 	CursorLineNr = { fg = p.accent },
 
 	-- Pmenu (menú de autocompletado)
-	Pmenu = { fg = p.fg, bg = p.black },
-	PmenuSel = { fg = p.white, bg = p.gray3 },
-	PmenuSbar = { bg = p.gray2 },
-	PmenuThumb = { bg = p.gray3 },
+	Pmenu = { fg = p.fg, bg = p.surface },
+	PmenuSel = { fg = p.fg, bg = p.selection },
+	PmenuSbar = { bg = p.surface },
+	PmenuThumb = { bg = p.ui_secondary },
 
 	-- Búsqueda
 	Search = { fg = p.accent, bg = p.black },
@@ -56,10 +56,10 @@ return {
 	CurSearch = { fg = p.black, bg = p.accent },
 
 	-- Otros
-	Folded = { fg = p.gray4 },
+	Folded = { fg = p.fg_muted },
 	MatchParen = { fg = p.accent, underline = true },
 	NonText = { fg = p.fg_muted },
-	FloatBorder = { fg = p.gray5, bg = "NONE" },
+	FloatBorder = { fg = p.border, bg = "NONE" },
 	QuickFixLine = { fg = p.red, bg = p.gray2 },
 	SpecialKey = { fg = p.fg_muted },
 	SpellBad = { fg = p.orange, underline = true },
@@ -80,8 +80,8 @@ return {
 	Terminal = { fg = p.fg, bg = p.black },
 
 	-- Winbar
-	Winbar = { fg = p.fg, bg = p.gray1 },
-	WinbarNC = { fg = p.fg_muted, bg = p.bg_dark },
+	Winbar = { fg = p.ui_secondary, bg = "NONE" },
+	WinbarNC = { fg = p.fg_muted, bg = "NONE" },
 
 	-- Estilo Italic (si se usa explícitamente)
 	Italic = { fg = p.blue, italic = true },

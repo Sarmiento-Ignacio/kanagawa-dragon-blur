@@ -4,7 +4,7 @@ local p = require("kanagawa_dragon_blur.variant")(variant)
 
 return {
   normal = {
-    a = { fg = "#a6a69c", bg = "NONE" },
+    a = { fg = p.ui_secondary, bg = "NONE" },
     b = { fg = p.fg, bg = "NONE" },
     c = { fg = p.fg, bg = "NONE" },
   },
@@ -14,8 +14,8 @@ return {
   terminal = { a = { fg = p.cyan, bg = "NONE", gui = "bold" } },
   replace = { a = { fg = p.orange, bg = "NONE", gui = "bold" } },
   inactive = {
-    a = { fg = p.gray4, bg = "NONE", gui = "bold" },
-    b = { fg = p.gray4, bg = "NONE" },
-    c = { fg = p.gray4, bg = "NONE" },
+    a = { fg = p.fg_muted, bg = "NONE" },
+    b = { fg = p.fg_muted, bg = "NONE" },
+    c = { fg = p.fg_muted, bg = "NONE" },
   },
 }

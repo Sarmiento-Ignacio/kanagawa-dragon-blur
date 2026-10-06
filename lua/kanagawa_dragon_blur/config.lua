@@ -24,6 +24,7 @@ local default_config = {
 		markdown = true,
 		mason = true,
 		mini = true,
+		mini_icons = true,
 		navic = true,
 		neo_tree = true,
 		neogit = true,

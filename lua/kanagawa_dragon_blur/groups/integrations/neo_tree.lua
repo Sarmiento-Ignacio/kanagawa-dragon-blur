@@ -1,7 +1,7 @@
 local p = require("kanagawa_dragon_blur.palette")
 
 return {
-  NeoTreeFloatBorder = { fg = p.gray3, bg = p.bg },
-  NeoTreeFloatTitle = { fg = p.subtext4, bg = p.fg },
-  NeoTreeTitleBar = { fg = p.subtext4, bg = p.gray1 },
+  NeoTreeFloatBorder = { fg = p.border, bg = "NONE" },
+  NeoTreeFloatTitle = { fg = p.fg, bg = "NONE", bold = true },
+  NeoTreeTitleBar = { fg = p.fg, bg = "NONE", bold = true },
 }

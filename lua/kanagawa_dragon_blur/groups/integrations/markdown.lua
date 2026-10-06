@@ -1,11 +1,11 @@
 local p = require("kanagawa_dragon_blur.palette")
 return {
   markdownH1 = { fg = p.title, bold = true },
-  markdownH2 = { fg = p.primary, bold = true },
-  markdownH3 = { fg = p.enum, bold = true },
-  markdownH4 = { fg = p.tag, bold = true },
-  markdownH5 = { fg = p.type, bold = true },
-  markdownH6 = { fg = p.variant, bold = true },
+  markdownH2 = { fg = p.title, bold = true },
+  markdownH3 = { fg = p.title, bold = true },
+  markdownH4 = { fg = p.title, bold = true },
+  markdownH5 = { fg = p.title, bold = true },
+  markdownH6 = { fg = p.title, bold = true },
   markdownHeadingDelimiter = { fg = p.comment_doc },
   markdownHeadingRule = { fg = p.comment_doc },
   markdownId = { fg = p.tag },

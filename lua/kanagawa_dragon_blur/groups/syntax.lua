@@ -50,8 +50,8 @@ return {
 	htmlTagN = { fg = p.tag },
 	htmlTagName = { fg = p.tag }, -- tag text
 	-- Diff
-	diffAdded = { fg = p.string },
-	diffRemoved = { fg = p.variable },
+	diffAdded = { fg = p.green },
+	diffRemoved = { fg = p.red },
 	diffChanged = { fg = p.operator },
 	diffOldFile = { fg = p.comment_doc },
 	diffNewFile = { fg = p.title },

@@ -1,6 +1,6 @@
 local p = require("kanagawa_dragon_blur.palette")
 return {
-  IlluminatedWordText = { bg = p.bracket },
-  IlluminatedWordRead = { bg = p.bracket },
-  IlluminatedWordWrite = { bg = p.bracket },
+  IlluminatedWordText = { bg = p.selection },
+  IlluminatedWordRead = { bg = p.selection },
+  IlluminatedWordWrite = { bg = p.selection },
 }

@@ -1,7 +1,7 @@
 local p = require("kanagawa_dragon_blur.palette")
 
 return {
-  NoiceCmdlinePopup = { bg = p.bg_dark },
-  NoiceCmdlinePopupBorder = { fg = p.blue, italic = true },
+  NoiceCmdlinePopup = { bg = "NONE" },
+  NoiceCmdlinePopupBorder = { fg = p.border, bg = "NONE" },
   NoiceCmdlineIcon = { fg = p.blue },
 }
