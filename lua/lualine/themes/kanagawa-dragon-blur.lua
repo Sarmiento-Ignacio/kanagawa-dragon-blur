@@ -4,7 +4,7 @@ local p = require("kanagawa_dragon_blur.variant")(variant)
 
 return {
   normal = {
-    a = { fg = p.blue, bg = "NONE", gui = "bold" },
+    a = { fg = "#a6a69c", bg = "NONE" },
     b = { fg = p.fg, bg = "NONE" },
     c = { fg = p.fg, bg = "NONE" },
   },
