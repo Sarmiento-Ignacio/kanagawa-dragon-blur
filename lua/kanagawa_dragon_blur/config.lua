@@ -16,6 +16,7 @@ local default_config = {
 		blink = true,
 		cmp = true,
 		flash = true,
+		fzf_lua = true,
 		gitsigns = true,
 		hop = true,
 		indent_blankline = true,

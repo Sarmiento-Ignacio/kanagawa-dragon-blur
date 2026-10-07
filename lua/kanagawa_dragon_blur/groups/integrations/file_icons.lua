@@ -32,12 +32,6 @@ return {
 	OilChange = { fg = p.orange },
 
 	-- =============================================================================
-	-- FZF-LUA (si lo usas)
-	-- =============================================================================
-	FzfLuaDir = { fg = p.blue },
-	FzfLuaFile = { fg = p.white },
-
-	-- =============================================================================
 	-- RANGER / LF / NNN (terminal file managers)
 	-- =============================================================================
 	-- Estos usan los colores de terminal, que ya están configurados en terminal.lua
